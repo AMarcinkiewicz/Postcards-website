@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcards</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <style>
+        body {
+            background-color: #161617;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            user-select: none;
+            -webkit-user-drag: none;
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/LogoV1.png" alt="Postcards Logo" draggable="false" oncontextmenu="return false;">
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</body>
+</html>
